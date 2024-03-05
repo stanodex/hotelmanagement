@@ -1,5 +1,6 @@
 **Hotel Management**
-![main menu](https://github.com/stanodex/HotelManagement/images/75094976/5929fd23-f142-4d0d-b95e-b6a721463992)
+![MainMenu]([https://github.com/stanodex/HotelManagement/assets/75094976/b3b0eb7f-113e-4d96-b677-2feeb13d3474](https://github.com/stanodex/HotelManagement/blob/main/images/MainMenu.png))
+
 
 ------------------------------------------------------------------------------------------
 **This project is implemented by using Swing and MySQL database. By using this project you can:**
