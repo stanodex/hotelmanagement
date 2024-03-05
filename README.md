@@ -18,9 +18,9 @@
 - When you check out, the page updates itself and shows check in date and current date to check out and calculates the total amount.
 ------------------------------------------------------------------------------------------
 ***Steps to run the application***
--[] Open MySQLWorkbench and create a database named 'HOTELDATABASE'.
--[] Create the tables and trigger by using mysqlquery.txt.
--[] Populate the tables by using app or query.
--[] Import the project in IDE.
--[] Import the jar file from lib folder.
--[] Run the project.
+1. Open MySQLWorkbench and create a database named 'HOTELDATABASE'.
+2. Create the tables and trigger by using mysqlquery.txt.
+3. Populate the tables by using app or query.
+4. Import the project in IDE.
+5. Import the jar file from lib folder.
+6. Run the project.
