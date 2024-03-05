@@ -1,0 +1,59 @@
+
+CREATE TABLE rooms (
+	room_id int NOT NULL  AUTO_INCREMENT PRIMARY KEY,
+	room_type varchar(1) NOT NULL,
+	room_capacity int NOT NULL,
+	price_per_night decimal(4,0) NOT NULL,
+	is_available tinyint(1) NOT NULL
+);
+
+
+CREATE TABLE receptionists (
+	r_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	r_fullname varchar(25) NOT NULL,
+	r_password varchar(20) NOT NULL,
+	r_address varchar(200) NOT NULL,
+	r_phonenumber varchar(16) NOT NULL
+);
+
+ALTER TABLE receptionists AUTO_INCREMENT = 1001;
+
+INSERT INTO receptionists (r_fullname, r_password, r_address, r_phonenumber) VALUES
+('EXAMPLE RECEPTIONISTS', 'password', 'Example Address', '11111111111'),
+('Paul Scott', 'paul123', 'Example Address','222222222');
+
+CREATE TABLE currentguests (
+	guest_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	guest_name varchar(20) NOT NULL,
+	phone_number varchar(16) NOT NULL,
+	check_in_date date NOT NULL,
+	assigned_room_number int NOT NULL,
+	assigned_room_type varchar(1) NOT NULL
+);
+
+ALTER TABLE currentguests AUTO_INCREMENT = 3001;
+
+CREATE TABLE previousguests (
+	guest_id int NOT NULL PRIMARY KEY,
+	guest_name varchar(20) NOT NULL,
+	phone_number varchar(16) NOT NULL,
+	check_in_date date NOT NULL,
+	check_out_date date NOT NULL,
+	assigned_room_number int NOT NULL,
+	assigned_room_type varchar(1) NOT NULL
+);
+DELIMITER //
+
+CREATE TRIGGER move_to_previous_g
+BEFORE DELETE ON currentguests
+FOR EACH ROW
+BEGIN
+    INSERT INTO previousguests (guest_id, guest_name, phone_number, check_in_date, check_out_date, assigned_room_number, assigned_room_type)
+    VALUES (OLD.guest_id, OLD.guest_name, OLD.phone_number, OLD.check_in_date, NOW(), OLD.assigned_room_number, OLD.assigned_room_type);
+END;
+//
+
+DELIMITER ;
+
+
+
