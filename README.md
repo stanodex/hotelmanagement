@@ -20,7 +20,7 @@
 ***Steps to run the application***
 1. Open MySQLWorkbench and create a database named 'HOTELDATABASE'.
 2. Create the tables and trigger by using mysqlquery.txt.
-3. Populate the tables by using app or query.
+3. Populate the tables by using this project or query.
 4. Import the project in IDE.
 5. Import the jar file from lib folder.
 6. Run the project.
