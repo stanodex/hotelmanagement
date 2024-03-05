@@ -1,5 +1,4 @@
 **Hotel Management**
-
 ------------------------------------------------------------------------------------------
 **This project is implemented by using Swing and MySQL database. By using this project you can:**
 - Guest Check In
