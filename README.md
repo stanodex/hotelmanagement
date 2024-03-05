@@ -1,6 +1,4 @@
 **Hotel Management**
-![MainMenu](https://github.com/stanodex/HotelManagement/blob/main/images/MainMenu.png))
-
 
 ------------------------------------------------------------------------------------------
 **This project is implemented by using Swing and MySQL database. By using this project you can:**
