@@ -1,5 +1,5 @@
 **Hotel Management**
-![MainMenu]([https://github.com/stanodex/HotelManagement/assets/75094976/b3b0eb7f-113e-4d96-b677-2feeb13d3474](https://github.com/stanodex/HotelManagement/blob/main/images/MainMenu.png))
+![MainMenu](https://github.com/stanodex/HotelManagement/blob/main/images/MainMenu.png))
 
 
 ------------------------------------------------------------------------------------------
