@@ -2,9 +2,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Connect {
-    private static final String Db_Url = "jdbc:mysql://localhost:3306/DATABASE NAME";
+    private static final String Db_Url = "jdbc:mysql://localhost:3306/HOTELDATABASE";
     private static final String Db_User = "root";
-    private static final String Db_Pass = "DATABASE PASSWORD";
+    private static final String Db_Pass = "";
     private static Connection connection;
 
     private Connect() {
