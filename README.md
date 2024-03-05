@@ -12,6 +12,7 @@
 ------------------------------------------------------------------------------------------
 **Notes**
 - In login page you will use receptionist id and password. There is default receptionist for first login ***(ID: 1001 Pass: password)*** . You can add another receptionist.
+- You can search guest by using room number or guest name.
 - When you click check in button and if there is no available room, it will not allow you to check in.
 - While making check in, you will select room capacity and room type. When you select capacity, room type will be updated by your selected capacity.
 - Room number starts from 1, receptionist number starts from 1001, guest number starts from 3000. It provides clarity.
